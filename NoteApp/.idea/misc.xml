@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/drawable/ic_add.xml" value="0.15" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/drawable/ic_note_add.xml" value="0.15" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/dialog_api.xml" value="0.223731884057971" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/dialog_choose_catalog.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_add.xml" value="0.12" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_add_catalog.xml" value="0.2463768115942029" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_catalog_detail.xml" value="0.2463768115942029" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_catalogs.xml" value="0.10989583333333333" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_detail.xml" value="0.176" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/fragment_notes.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/row_catalog.xml" value="0.4" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/row_catalog_with_notes.xml" value="0.2463768115942029" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/layout/row_note.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/menu/catalogs_fragment_menu.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/menu/color_menu.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/menu/detail_fragment_menu.xml" value="0.25" />
+        <entry key="..\:/AndroidApp/NoteApp/app/src/main/res/menu/upper_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

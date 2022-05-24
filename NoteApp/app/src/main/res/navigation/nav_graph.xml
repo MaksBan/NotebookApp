@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notesFragment">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.github.maksban.noteapp.fragments.notes.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_catalogsFragment"
+            app:destination="@id/catalogsFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_catalogDetailFragment"
+            app:destination="@id/catalogDetailFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_catalogDetailFragment2"
+            app:destination="@id/catalogDetailFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_addCatalogFragment"
+            app:destination="@id/addCatalogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.github.maksban.noteapp.fragments.notes.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.github.maksban.noteapp.fragments.notes.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <argument
+            android:name="currentNote"
+            app:argType="com.github.maksban.noteapp.data.model.Note" />
+        <action
+            android:id="@+id/action_detailFragment_to_catalogDetailFragment"
+            app:destination="@id/catalogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogsFragment"
+        android:name="com.github.maksban.noteapp.fragments.catalogs.CatalogsFragment"
+        android:label="fragment_catalogs"
+        tools:layout="@layout/fragment_catalogs" >
+        <action
+            android:id="@+id/action_catalogsFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_addCatalogFragment"
+            app:destination="@id/addCatalogFragment" />
+        <action
+            android:id="@+id/action_catalogsFragment_to_catalogDetailFragment"
+            app:destination="@id/catalogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCatalogFragment"
+        android:name="com.github.maksban.noteapp.fragments.catalogs.add.AddCatalogFragment"
+        android:label="fragment_add_catalog"
+        tools:layout="@layout/fragment_add_catalog" >
+        <action
+            android:id="@+id/action_addCatalogFragment_to_catalogsFragment"
+            app:destination="@id/catalogsFragment" />
+        <action
+            android:id="@+id/action_addCatalogFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogDetailFragment"
+        android:name="com.github.maksban.noteapp.fragments.catalogs.detail.CatalogDetailFragment"
+        android:label="fragment_catalog_detail"
+        tools:layout="@layout/fragment_catalog_detail" >
+        <action
+            android:id="@+id/action_catalogDetailFragment_to_catalogsFragment"
+            app:destination="@id/catalogsFragment" />
+        <argument
+            android:name="currentCatalog"
+            app:argType="com.github.maksban.noteapp.data.model.Catalog" />
+        <action
+            android:id="@+id/action_catalogDetailFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_catalogDetailFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
